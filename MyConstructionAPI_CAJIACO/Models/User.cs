@@ -23,7 +23,7 @@ namespace MyConstructionAPI_CAJIACO.Models
         public bool? IsBlocked { get; set; }
         public int UserRoleId { get; set; }
 
-        public virtual UserRole UserRole { get; set; } = null!;
+        public virtual UserRole? UserRole { get; set; } = null!;
         public virtual ICollection<ConstructionCategory> ConstructionCategories { get; set; }
         public virtual ICollection<ConstructionStep> ConstructionSteps { get; set; }
         public virtual ICollection<Construction> Constructions { get; set; }

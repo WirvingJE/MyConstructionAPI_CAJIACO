@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyConstructionAPI_CAJIACO.Models;
+using MyConstructionAPI_CAJIACO.Attributes;
 
 namespace MyConstructionAPI_CAJIACO.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[ApiKey]
     public class UserRolesController : ControllerBase
     {
         private readonly MyConstructionBDContext _context;

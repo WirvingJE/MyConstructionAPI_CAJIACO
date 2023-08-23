@@ -18,9 +18,9 @@ namespace MyConstructionAPI_CAJIACO.Models
         public int UserId { get; set; }
         public int ConstructionCategory { get; set; }
 
-        public virtual ConstructionCategory ConstructionCategoryNavigation { get; set; } = null!;
-        public virtual User User { get; set; } = null!;
+        public virtual ConstructionCategory? ConstructionCategoryNavigation { get; set; } = null!;
+        public virtual User? User { get; set; } = null!;
 
-        public virtual ICollection<ConstructionStep> ConstructionStepConstructionSteps { get; set; }
+        public virtual ICollection<ConstructionStep>? ConstructionStepConstructionSteps { get; set; }
     }
 }

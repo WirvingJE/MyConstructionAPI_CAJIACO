@@ -15,8 +15,8 @@ namespace MyConstructionAPI_CAJIACO.Models
         public string? Description { get; set; }
         public int UserId { get; set; }
 
-        public virtual User User { get; set; } = null!;
+        public virtual User? User { get; set; } = null!;
 
-        public virtual ICollection<Construction> ConstructionProtocols { get; set; }
+        public virtual ICollection<Construction>? ConstructionProtocols { get; set; }
     }
 }
